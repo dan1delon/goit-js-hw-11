@@ -21,6 +21,7 @@ function searchPhoto(e) {
     const input = e.target.elements.text.value;
 
     if (input === '') {
+        loader.style.display = 'none';
         return iziToast.error({
             message: `Sorry, there are no images matching your search query. Please, try again!`,
             position: "topRight",
